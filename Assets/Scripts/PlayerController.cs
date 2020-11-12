@@ -3,64 +3,101 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
-{
-    public Vector3 jump;
-    public float thrust = 10.0f;
-    public float jumpThrust = 2.0f;
+public class PlayerController : MonoBehaviour {
 
-    public Rigidbody2D rb;
 
-    public bool grounded;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        jump = new Vector3(0.0f, 2.0f, 0.0f);        // Old Code: transform.position = new Vector3(0.0f, 2.0f, 0.0f);
-    }
+    //movement variable
+    public float maxSpeed;
 
-    //Ground Checker
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Ground") { grounded = true; }     
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "EndFlag") 
-        { SceneManager.LoadScene("WinScene"); }
-    }
-    // Update is called once per frame
+    //jumping variables
+    bool grounded = false;
+    float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer;
+    public Transform groundCheck;
+    public float jumpHeight;
+
+    public Rigidbody2D myRB;
+    Animator myAnim;
+    bool facingRight;
+
+    //for shooting
+    public Transform gunTip;
+    public GameObject bullet;
+    float fireRate = 0.5f;
+    float nextFire = 0f;
+
+	
+    // Use this for initialization
+	void Start () {
+        myRB = GetComponent<Rigidbody2D>();
+        myAnim = GetComponent<Animator>();
+
+        facingRight = true;
+	}
+
+    //update is called once per frame
     void Update()
     {
-        //Jump Code
-        if (Input.GetKey(KeyCode.W) && grounded == true)
+        if(grounded && Input.GetAxis("Jump") > 0)
         {
-
-            rb.AddForce(jump * jumpThrust, ForceMode2D.Impulse);
             grounded = false;
-            Debug.Log("W pressed");
-
+            myAnim.SetBool("isGrounded",grounded);
+            myRB.AddForce(new Vector2(0, jumpHeight));
         }
-        
 
+        //player shooting
+        if (Input.GetAxisRaw("Fire1") > 0) FireRocket();
     }
-  
+
+    // Update is called once per frame
     void FixedUpdate()
     {
-       //Movement
-        if (Input.GetKey(KeyCode.D)) 
+
+        //check if we are grounded, if no- then we are falling
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        myAnim.SetBool("isGrounded", grounded);
+
+        myAnim.SetFloat("verticalSpeed", myRB.velocity.y);
+
+        float move = Input.GetAxis("Horizontal");
+        myAnim.SetFloat("speed", Mathf.Abs(move));
+        myRB.velocity = new Vector2(move * maxSpeed, myRB.velocity.y);
+
+        if (move > 0 && !facingRight)
         {
-            rb.AddForce(transform.right * thrust);
+            Flip();
         }
-        //Old Code
-        //if (Input.GetKey(KeyCode.S))
-        //{
-        //    rb.AddForce(transform.up * -thrust);
-        //}
-        if (Input.GetKey(KeyCode.A))
+        else if (move < 0 && facingRight)
         {
-            rb.AddForce(transform.right * -thrust);
+            Flip();
         }
-        
     }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+    void FireRocket() 
+    { 
+        if(Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            if (facingRight)
+            {
+                Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            }else if (!facingRight)
+            {
+                Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 180f)));
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EndFlag")
+        { SceneManager.LoadScene("WinScene"); }
+    }
+
 }
