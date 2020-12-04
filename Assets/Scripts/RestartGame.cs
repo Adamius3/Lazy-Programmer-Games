@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class restartGame : MonoBehaviour {
+public class RestartGame : MonoBehaviour {
 
     public float restartTime;
     bool restartNow = false;
@@ -23,7 +23,7 @@ public class restartGame : MonoBehaviour {
         
 	}
 
-    public void restartTheGame()
+    public void RestartTheGame()
     {
         restartNow = true;
         resetTime = Time.time + restartTime;

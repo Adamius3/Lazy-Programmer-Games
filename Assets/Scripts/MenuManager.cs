@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     //Go to 
-   public void playGame() { SceneManager.LoadScene("MainScene"); }
+   public void playGame() { SceneManager.LoadScene("Level2"); }
     public void instruct() { SceneManager.LoadScene("InstructScene"); }
     //Go to Title
     public void backTitle() { SceneManager.LoadScene("TitleScene"); }

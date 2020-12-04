@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject deathFX;
     public AudioClip playerHurt;
 
-    public restartGame theGameManager;
+    public RestartGame theGameManager;
 
     float currentHealth;
 
@@ -95,13 +95,13 @@ public class PlayerHealth : MonoBehaviour {
 
         Animator gameOverAnimator = gameOverScreen.GetComponent<Animator>();
         gameOverAnimator.SetTrigger("gameOver");
-        theGameManager.restartTheGame();
+        theGameManager.RestartTheGame();
     }
 
     public void WinGame()
     {
         Destroy(gameObject);
-        theGameManager.restartTheGame();
+        theGameManager.RestartTheGame();
         Animator winGameAnimator = winGameScreen.GetComponent<Animator>();
         winGameAnimator.SetTrigger("gameOver");
     }
