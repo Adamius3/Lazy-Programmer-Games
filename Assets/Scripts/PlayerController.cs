@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public GameObject spawnPoint;
+
     public bool grounded;
     // Start is called before the first frame update
     void Start()
@@ -24,11 +26,11 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Ground") { grounded = true; }     
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "EndFlag") 
-        { SceneManager.LoadScene("WinScene"); }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "EndFlag") 
+    //    { SceneManager.LoadScene("WinScene"); }
+    //}
     // Update is called once per frame
     void Update()
     {
@@ -61,6 +63,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(transform.right * -thrust);
         }
-        
+        if (Input.GetKey(KeyCode.K)) 
+        {
+
+            this.transform.position = spawnPoint.transform.position;
+        }
     }
 }
