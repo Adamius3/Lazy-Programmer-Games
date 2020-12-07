@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: e8d22cf36cab65e44b51c47b0db142bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6903535430572646479
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_0
+  - first:
+      213: 2520978301241134578
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_1
+  - first:
+      213: 3186247655368876904
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_2
+  - first:
+      213: -7617254948886983099
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_3
+  - first:
+      213: -2135856119856373873
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_4
+  - first:
+      213: 245969322154679941
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_5
+  - first:
+      213: 3511267831323035147
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_6
+  - first:
+      213: 8911053719183668172
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_7
+  - first:
+      213: 6162861436561289110
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_8
+  - first:
+      213: -4742991622547365100
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_9
+  - first:
+      213: 6021662126697412022
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_10
+  - first:
+      213: -4839065698794947335
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_11
+  - first:
+      213: -4326111725285547756
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_12
+  - first:
+      213: -3634016381711784763
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_13
+  - first:
+      213: -3651338403527236342
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_14
+  - first:
+      213: -8405160207194189808
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_15
+  - first:
+      213: 5948229088044342593
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_16
+  - first:
+      213: -7005867648542125052
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_17
+  - first:
+      213: 6738308895017608304
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_18
+  - first:
+      213: 6038109281064218742
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_19
+  - first:
+      213: 1885975451892284494
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_20
+  - first:
+      213: 3808192871065706818
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_21
+  - first:
+      213: 1804836017404275616
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_22
+  - first:
+      213: -8065805425826205459
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_23
+  - first:
+      213: 2965440493873317272
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_24
+  - first:
+      213: -4947932967725328057
+    second: Genesis_32X_SCD_-_Taz-Mania_-_Bat_3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 69
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f402b99c5e84ecf50800000000000000
+      internalID: 6903535430572646479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 66
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd02f388605cf220800000000000000
+      internalID: 2520978301241134578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 61
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863eea07c53d73c20800000000000000
+      internalID: 3186247655368876904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074216a2d38438d50800000000000000
+      internalID: 6738308895017608304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_19
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 39
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67072dc566cabc350800000000000000
+      internalID: 6038109281064218742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 41
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c75216ea45c2a10800000000000000
+      internalID: 1885975451892284494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_21
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 41
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241eb045d3b69d430800000000000000
+      internalID: 3808192871065706818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab663f9bc01c0910800000000000000
+      internalID: 1804836017404275616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_23
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0f53e13b0801090800000000000000
+      internalID: -8065805425826205459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis_32X_SCD_-_Taz-Mania_-_Bat_24
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895c0e7ea6c572920800000000000000
+      internalID: 2965440493873317272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
