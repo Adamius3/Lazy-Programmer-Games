@@ -72,9 +72,9 @@ GameObject:
   - component: {fileID: 2327900489038204592}
   - component: {fileID: 2327900489038204594}
   - component: {fileID: 2327900489038204595}
-  - component: {fileID: 2327900489038204597}
   - component: {fileID: 2327900489038204596}
   - component: {fileID: 2327900489038204556}
+  - component: {fileID: 1478490428285691781}
   - component: {fileID: 2327900489038204559}
   - component: {fileID: 2327900489038204558}
   m_Layer: 0
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c40a6bd189554bb41812152dda82b832, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
@@ -191,22 +191,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &2327900489038204597
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2327900489038204599}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.02, y: -0.2}
-  serializedVersion: 2
-  m_Radius: 0.47230378
 --- !u!61 &2327900489038204596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -254,6 +238,20 @@ MonoBehaviour:
   myRB: {fileID: 2327900489038204594}
   gunTip: {fileID: 2327900488274004426}
   bullet: {fileID: 1527385140884657272, guid: 7e15c22ea733b0949ac30d867cb3e683, type: 3}
+--- !u!114 &1478490428285691781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327900489038204599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d18ff269a212b249b35c4fdf08117ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 5
+  attackDelay: 0.3
 --- !u!114 &2327900489038204559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,11 +264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570af81ea19c0ba47a807d86093f367d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealth: 50
+  fullHealth: 100
   deathFX: {fileID: 1436844258363678, guid: e33031b30019121469b7e1ed0ccb5ecc, type: 3}
   playerHurt: {fileID: 8300000, guid: 3eb1981e038743e46b2d1a0e9c9e0d3a, type: 3}
   theGameManager: {fileID: 0}
-  playerDeathSound: {fileID: 8300000, guid: 98ea146165daf2044861fad84eaff8bc, type: 3}
+  playerDeathSound: {fileID: 8300000, guid: 3eb1981e038743e46b2d1a0e9c9e0d3a, type: 3}
   healthSlider: {fileID: 0}
   damageScreen: {fileID: 0}
   gameOverScreen: {fileID: 0}

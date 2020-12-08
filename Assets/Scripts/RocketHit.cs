@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RocketHit : MonoBehaviour {
 
-    public float weaponDamage;
+    public int weaponDamage;
 
     ProjectileController myPC;
 
@@ -31,6 +31,11 @@ public class RocketHit : MonoBehaviour {
             {
                 EnemyHealth hurtEnemy = other.gameObject.GetComponent<EnemyHealth>();
                 hurtEnemy.addDamage(weaponDamage);
+            }
+            if(other.tag == "BatEnemy")
+            {
+                Bat batDamaged = other.gameObject.GetComponent<Bat>();
+                batDamaged.Damage(weaponDamage);
             }
         }
     }

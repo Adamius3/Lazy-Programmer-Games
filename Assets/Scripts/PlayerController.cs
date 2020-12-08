@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 
     //jumping variables
     bool grounded = false;
+    bool shooting = false;
     float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
     public Transform groundCheck;
@@ -31,7 +32,6 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-
         facingRight = true;
 	}
 
@@ -46,7 +46,16 @@ public class PlayerController : MonoBehaviour {
         }
 
         //player shooting
-        if (Input.GetAxisRaw("Fire1") > 0) FireRocket();
+        if (Input.GetAxisRaw("Fire1") > 0)
+        {
+            FireRocket();
+            myAnim.SetBool("isShooting", true);
+        }
+        if(Input.GetAxisRaw("Fire1") < 0)
+        {
+            myAnim.SetBool("isShooting", shooting);
+        }
+            
     }
 
     // Update is called once per frame
