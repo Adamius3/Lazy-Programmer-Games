@@ -204,7 +204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02, y: 0.13}
+  m_Offset: {x: -0.020013928, y: -0.14073378}
   m_SpriteTilingProperty:
     border: {x: 0.24, y: 0, z: 0.17999999, w: 0.11}
     pivot: {x: 0.5, y: 0.5}
@@ -215,7 +215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 0.5}
+  m_Size: {x: 0.6462647, y: 1.0414675}
   m_EdgeRadius: 0
 --- !u!114 &2327900489038204556
 MonoBehaviour:
@@ -237,7 +237,7 @@ MonoBehaviour:
   jumpHeight: 175
   myRB: {fileID: 2327900489038204594}
   gunTip: {fileID: 2327900488274004426}
-  bullet: {fileID: 1527385140884657272, guid: 7e15c22ea733b0949ac30d867cb3e683, type: 3}
+  bullet: {fileID: 1527385140884657272, guid: 197af68f862f94846998b68982b9295b, type: 3}
 --- !u!114 &1478490428285691781
 MonoBehaviour:
   m_ObjectHideFlags: 0

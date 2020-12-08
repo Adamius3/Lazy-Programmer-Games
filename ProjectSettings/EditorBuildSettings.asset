@@ -6,20 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TitleScene.unity
+    path: Assets/Scenes/Tim's Scenes/TitleScene.unity
     guid: 4efdf36d36094fc468bd1b9701faf2f4
   - enabled: 1
-    path: Assets/Scenes/InstructScene.unity
+    path: Assets/Scenes/Tim's Scenes/InstructScene.unity
     guid: 9abf1eb48efb75b4a8f0035537181279
-  - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: ffa4280ba6918b3459fa508363420133
-  - enabled: 1
-    path: Assets/Scenes/SecondScene.unity
-    guid: e3aa5ab5af81866419b62b21c2e41865
-  - enabled: 1
-    path: Assets/Scenes/ThirdScene.unity
-    guid: 38c44e34e8f82ae4b9bee721708d18ba
   - enabled: 1
     path: Assets/Scenes/OptionsScene.unity
     guid: 3d82b9e1c20d4e9439ec40191c5a630d
@@ -27,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScene.unity
     guid: 27155e3a89d3eed4a852d9b1db6b4fc8
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Tim's Scenes/Level1.unity
+    guid: 36165ab1e0f60b94381f4f6170882175
+  - enabled: 1
+    path: Assets/Scenes/Tim's Scenes/Level2.unity
     guid: 18c55b5f760f51b4ca6af2ef83da86ed
   m_configObjects: {}
