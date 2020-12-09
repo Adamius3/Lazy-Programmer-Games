@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
             FireRocket();
             myAnim.SetBool("isShooting", true);
         }
-        if(Input.GetAxisRaw("Fire1") < 0)
+        if(Input.GetAxisRaw("Fire1") <= 0)
         {
             myAnim.SetBool("isShooting", shooting);
         }

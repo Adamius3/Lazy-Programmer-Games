@@ -8,13 +8,32 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    //Go to 
-   public void playGame() { SceneManager.LoadScene("Level1"); }
-    public void instruct() { SceneManager.LoadScene("InstructScene"); }
-    //Go to Title
+    
+
+    //Go to Title Menu
     public void backTitle() { SceneManager.LoadScene("TitleScene"); }
-    //Go to Options 
+
+    //Go to Instructions Menu
+    public void instruct() { SceneManager.LoadScene("InstructScene"); }
+    
+    //Go to Options Menu
     public void options() { SceneManager.LoadScene("OptionsScene"); }
+    
+    //Go to Level 1
+    public void playGame() { SceneManager.LoadScene("Level1"); }
+
+    public void level1Tran() { SceneManager.LoadScene("LevelTransition1"); }
+
+    public void optionsLvl1() { SceneManager.LoadScene("OptionsLvl1"); }
+
+    public void level2() { SceneManager.LoadScene("Level2"); }
+
+    public void level2Tran() { SceneManager.LoadScene("LevelTransition2"); }
+
+    public void optionsLvl2() { SceneManager.LoadScene("OptionsLvl2"); }
+
+    public void level3() { SceneManager.LoadScene("Level3"); }
+
     //Quit game
     public void exitGame(){ Application.Quit(); }
 

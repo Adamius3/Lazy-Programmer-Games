@@ -807,8 +807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.400005, y: 220.75996}
-  m_SizeDelta: {x: 233.13892, y: 101.1022}
+  m_AnchoredPosition: {x: 34, y: 208}
+  m_SizeDelta: {x: 258.67664, y: 123.44769}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486811445
 MonoBehaviour:
@@ -850,7 +850,9 @@ MonoBehaviour:
     Space - Jump
 
     Left Click -
-    Shoot'
+    Shoot
+
+    (HOLD TO CONTINUE FIRE)'
 --- !u!222 &486811446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1400,11 +1402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4693335250834008, guid: 775aa61744eed39428028e0e3f1ebf8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.86
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 4693335250834008, guid: 775aa61744eed39428028e0e3f1ebf8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.21
+      value: -2.35
       objectReference: {fileID: 0}
     - target: {fileID: 4693335250834008, guid: 775aa61744eed39428028e0e3f1ebf8c, type: 3}
       propertyPath: m_LocalPosition.z
