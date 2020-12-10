@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Code for the camera to follow player
+ */
 public class CameraFollowPlayer : MonoBehaviour {
 
-    public Transform target;  //hwat the camera is following
+    public Transform target;  //Target the camera is following
     public float smoothing; //dampening effect
 
     Vector3 offset;
@@ -17,7 +23,7 @@ public class CameraFollowPlayer : MonoBehaviour {
         lowY = transform.position.y;
 	}
 	
-	
+	//Follows player
 	void FixedUpdate () 
     {
         Vector3 targetCamPos = target.position + offset;

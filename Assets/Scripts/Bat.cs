@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
+/*Timothy Garcia 300898955
+ *Sarmad Siddiqi
+*/
 public class Bat : MonoBehaviour
 {
-    private int chealth = 10;
+    //Damage variables and animations
     public Animator animator;
     public float damage;
     public float damageRate;
     public float pushBackForce;
+    float nextDamage;
 
     //Health Variables
     public float enemyMaxHealth;
@@ -21,11 +27,9 @@ public class Bat : MonoBehaviour
     float currentHealth;
 
     public AudioClip deathKnell;
-
-    float nextDamage;
-
     public float speed = 3f;
     public Transform target;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,7 @@ public class Bat : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Animates the bat and moves toward the Player
     void FixedUpdate()
     {
         if (Vector2.Distance(transform.position, target.position) < 9)
@@ -44,31 +49,29 @@ public class Bat : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
         animator.SetFloat("Speed", Mathf.Abs(speed));
-
-        if (chealth <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
+    //Damage method that calls the Dead() method when health drops to 0 or below.
     public void Damage(int damage)
     {
         enemySlider.gameObject.SetActive(true);
         currentHealth -= damage;
         enemySlider.value = currentHealth;
 
-        if (currentHealth <= 0) Dead();
+        if (currentHealth <= 0) Dead(); //Calls the Dead() method
     }
 
+    //Dead method when bat gets killed by player
     void Dead()
     {
         death = true;
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathKnell, transform.position);
-        Instantiate(enemyDeathFX, transform.position, transform.rotation);
-        if (drops) Instantiate(theDrop, transform.position, transform.rotation);
+        Instantiate(enemyDeathFX, transform.position, transform.rotation); 
+        if (drops) Instantiate(theDrop, transform.position, transform.rotation); //Method to spawn a drop when killed
     }
 
+    //Damages player on contact
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player" && nextDamage < Time.time)

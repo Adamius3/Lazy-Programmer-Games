@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour {
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * 
+ * Code to control door opening animation
+ */
+public class DoorScript : MonoBehaviour 
+{
 	Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -13,6 +20,7 @@ public class DoorScript : MonoBehaviour {
 	
 	}
 
+	//Method for door opening animation
 	public void DoorOpens()
 	{
 		anim.SetBool ("Opens", true);

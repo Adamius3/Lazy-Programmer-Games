@@ -1,35 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SwitchScript : MonoBehaviour {
 
-
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Script for button to trigger the door opening
+ */
+public class SwitchScript : MonoBehaviour 
+{
 	public DoorTrigger[] doorTrig;
-
-
 
 	Animator anim;
 	public bool target;
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
 	}
-
 
     void OnTriggerStay2D()
 	{
 		anim.SetBool ("targetShot", true);
-        foreach (DoorTrigger trigger in doorTrig) {
+		foreach (DoorTrigger trigger in doorTrig)
+		{
 			trigger.Toggle(true);
-
-				}
-
+		}
 	}
+
 
 	void OnTriggerExit2D()
 	{
@@ -42,11 +48,6 @@ public class SwitchScript : MonoBehaviour {
             trigger.Toggle(false);
 			
 		}
-
-
-
-
-
 	}
 
 	void OnDrawGizmos()
@@ -56,7 +57,6 @@ public class SwitchScript : MonoBehaviour {
 		foreach (DoorTrigger trigger in doorTrig) {
 			
 			Gizmos.DrawLine(transform.position,trigger.transform.position);
-			
 		}
 
 

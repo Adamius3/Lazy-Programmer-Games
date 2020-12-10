@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5553b165d2931c46ba4d4ff42ea0d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 10
+  enemySpeed: 15
   enemyGraphic: {fileID: 1454563732813612}
   chargeTime: 0.5
 --- !u!1 &1085533954667240

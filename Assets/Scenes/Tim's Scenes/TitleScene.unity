@@ -601,7 +601,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.8810177
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -666,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 2327900489038204593, guid: 3bc2ab66ac8f060489a69896a95dfaa9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.99
+      value: 3.63
       objectReference: {fileID: 0}
     - target: {fileID: 2327900489038204593, guid: 3bc2ab66ac8f060489a69896a95dfaa9,
         type: 3}
@@ -1191,7 +1191,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.281714, y: 1.6843872}
+  m_Offset: {x: -11.436598, y: 1.6843872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1202,7 +1202,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.7196636, y: 26.82708}
+  m_Size: {x: 2.4098969, y: 26.82708}
   m_EdgeRadius: 0
 --- !u!61 &1525663819
 BoxCollider2D:
@@ -1217,7 +1217,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.6197796, y: 2.568407}
+  m_Offset: {x: 6.3820033, y: 2.568407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1228,7 +1228,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1098156, y: 22.248108}
+  m_Size: {x: 1.5853682, y: 22.248108}
   m_EdgeRadius: 0
 --- !u!1 &1577069961
 GameObject:

@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * Code to control the force of the spore that spawns from cannon plant.
+ */
 public class SporeController : MonoBehaviour {
 
     public float sporeSpeedHigh;

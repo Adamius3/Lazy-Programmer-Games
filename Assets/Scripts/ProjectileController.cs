@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * Code to speed and force of projectile
+ */
 public class ProjectileController : MonoBehaviour {
 
     public float projectileSpeed;
@@ -9,6 +14,7 @@ public class ProjectileController : MonoBehaviour {
     Rigidbody2D myRB;
 	
     // Use this for initialization
+    // Method to control the rigidbody and add a force to go straight left or right(depending where player is facing)
 	void Awake () {
 
         myRB = GetComponent<Rigidbody2D>();

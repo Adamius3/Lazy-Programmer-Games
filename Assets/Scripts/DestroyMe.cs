@@ -9,6 +9,7 @@ public class DestroyMe : MonoBehaviour {
 
 
     // Use this for initialization
+	//Destroy gameObject after a certain amount of time
     void Awake () {
 
         Destroy(gameObject, aliveTime);

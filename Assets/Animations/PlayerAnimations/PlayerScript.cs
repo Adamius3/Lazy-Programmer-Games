@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ */
+
 public class PlayerScript : MonoBehaviour
 {
     [SerializeField]
@@ -42,7 +47,7 @@ public class PlayerScript : MonoBehaviour
     {
         xAxis = Input.GetAxisRaw("Horizontal");
 
-        //space jump key pressed?
+        //space jump key pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isJumpPressed = true;

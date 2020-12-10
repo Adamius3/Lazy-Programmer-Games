@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * Code to damage player on trigger
+ */
 public class EnemyDamage : MonoBehaviour {
 
     public float damage;
@@ -20,6 +25,7 @@ public class EnemyDamage : MonoBehaviour {
 		
 	}
 
+    //Method to damage player from PlayerHealth script and calls pushBack() method on trigger
     void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Player" && nextDamage < Time.time)
@@ -32,6 +38,7 @@ public class EnemyDamage : MonoBehaviour {
         }
     }
 
+    //Method to add force that pushes the player
     void pushBack(Transform pushedObject)
     {
         Vector2 pushDirection = new Vector2(0, (pushedObject.position.y - transform.position.y)).normalized;

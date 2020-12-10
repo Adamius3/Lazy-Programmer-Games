@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Player Controller script the has the functions for movement and shooting
+ */
 public class PlayerController : MonoBehaviour {
 
 

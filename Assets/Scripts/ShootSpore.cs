@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootSpore : MonoBehaviour {
-
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Code to control Cannon plant object to shoot out spores
+ */
+public class ShootSpore : MonoBehaviour 
+{
+    //Cannon plant spore spawn and animation variables
     public GameObject theProjectile;
     public float shootTime;
     public int chanceShoot;
@@ -19,7 +26,9 @@ public class ShootSpore : MonoBehaviour {
 		
 	}
 
+
     // Update is called once per frame
+    //Method to insantiate a spore gameObject when player activates a trigger within Cannon plant
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && nextShootTime < Time.time && enemyDeath.death == false )

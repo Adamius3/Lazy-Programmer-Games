@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * Code to damage enemies 
+ */
 public class RocketHit : MonoBehaviour {
 
     public int weaponDamage;
@@ -20,6 +25,7 @@ public class RocketHit : MonoBehaviour {
 		
 	}
 
+    //Code to damage Boar and Bat enemy with layer Shootable and instantiate projectile collision animation
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Shootable"))

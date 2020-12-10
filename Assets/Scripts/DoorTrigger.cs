@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ * 
+ * Code to control door opening function
+ */
 public class DoorTrigger : MonoBehaviour {
 
 	public DoorScript door;
@@ -18,14 +24,14 @@ public class DoorTrigger : MonoBehaviour {
 	
 	}
   
-
+	//Method to call DoorOpens() method from DoorScript script when triggered
 	void OnTriggerEnter2D(Collider2D other){
 
 		if (ignoreTrigger)
 						return;
 
 		if (other.tag == "Player Projectile")
-						door.DoorOpens ();
+						door.DoorOpens();
       
 
 		}
@@ -41,12 +47,13 @@ public class DoorTrigger : MonoBehaviour {
 		
 	}
 
+
 	public void Toggle(bool state)
 	{
 		if (state)
-						door.DoorOpens ();
-				else
-						door.DoorCloses ();
+			door.DoorOpens();
+		else
+			door.DoorCloses();
 		}
 
 

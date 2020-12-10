@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Timothy Garcia 300898955
+ */
 public class LevelTransitioner : MonoBehaviour
 {
 
@@ -18,6 +21,8 @@ public class LevelTransitioner : MonoBehaviour
     {
         
     }
+
+    //Loads a scene based on string input in the inspector
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(nextlevel);

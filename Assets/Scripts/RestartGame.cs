@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Coded by:
+ * Timothy Garcia 300898955
+ */
 public class RestartGame : MonoBehaviour {
 
     public float restartTime;
@@ -23,6 +27,7 @@ public class RestartGame : MonoBehaviour {
         
 	}
 
+    //Method to restart after a certain amount of time
     public void RestartTheGame()
     {
         restartNow = true;

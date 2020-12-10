@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Code for health drop gameObject
+ */
 public class HealthPickup : MonoBehaviour {
 
     public float healthAmount;
@@ -16,6 +23,7 @@ public class HealthPickup : MonoBehaviour {
 		
 	}
 
+    //Method to add health to player when player collides with health gameObject
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

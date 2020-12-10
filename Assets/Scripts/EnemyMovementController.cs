@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/* 
+ * Coded by:
+ * Timothy Garcia
+ * 
+ * Code to control Boar enemies movement and attacks
+ */
 public class EnemyMovementController : MonoBehaviour
 {
 
@@ -9,14 +16,14 @@ public class EnemyMovementController : MonoBehaviour
 
     Animator enemyAnimator;
 
-    //facing
+    //flip variables
     public GameObject enemyGraphic;
     bool canFlip = true;
     bool facingRight = false;
     float flipTime = 5f;
     float nextFlipChance = 0f;
 
-    //attacking
+    //attack variables
     public float chargeTime;
     float startChargeTime;
     bool charging;
@@ -41,6 +48,7 @@ public class EnemyMovementController : MonoBehaviour
 
     }
 
+    // Flips towards the same direction as player when with a certain range using trigger
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -60,6 +68,7 @@ public class EnemyMovementController : MonoBehaviour
         }
     }
 
+    // Starts charging towards player if player stays within trigger for a certain amount of time.
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -73,6 +82,7 @@ public class EnemyMovementController : MonoBehaviour
         }
     }
 
+    // Stops charging towards player if player exits trigger range
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -84,6 +94,7 @@ public class EnemyMovementController : MonoBehaviour
         }
     }
 
+    //Method to control enemy sprite flip
     void flipFacing()
     {
         if (!canFlip) return;
